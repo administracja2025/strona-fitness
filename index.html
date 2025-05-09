@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit - Nowoczesny Salon Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF4500',
+                        secondary: '#1E3A8A'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+
+    </script>
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+
+
+
+</head>
+
+<body class="bg-gray-50">
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-['Pacifico'] text-white">PowerFit</a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-white hover:text-primary font-medium">O nas</a>
+                <a href="#offer" class="text-white hover:text-primary font-medium">Oferta</a>
+                <a href="#trainers" class="text-white hover:text-primary font-medium">Trenerzy</a>
+                <a href="#schedule" class="text-white hover:text-primary font-medium">Grafik</a>
+                <a href="#pricing" class="text-white hover:text-primary font-medium">Cennik</a>
+                <a href="#contact" class="text-white hover:text-primary font-medium">Kontakt</a>
+                <a href="#membership" class="bg-primary text-white px-6 py-2 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Kup Karnet</a>
+            </div>
+
+            <button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line ri-2x"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero-slider">
+        <div class="hero-slide active" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20gym%20interior%20with%20people%20working%20out%2C%20high-end%20fitness%20equipment%2C%20bright%20and%20spacious%20environment%2C%20motivational%20atmosphere%2C%20professional%20lighting%2C%20energetic%20scene%2C%20photorealistic%2C%20high-quality%20image%20perfect%20for%20fitness%20club%20website&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-4 h-full flex items-center">
+                <div class="w-full max-w-2xl text-white">
+                    <h1 class="text-white drop-shadow-lg text-5xl md:text-6xl font-bold mb-6">
+                        Przekraczaj swoje granice każdego dnia
+                    </h1>
+
+
+                    <p class="text-white drop-shadow-lg text xl font-bold mb-6">
+                        Najnowocześniejszy sprzęt, profesjonalni trenerzy i motywująca atmosfera - wszystko czego potrzebujesz, aby osiągnąć swoje cele fitness.
+                    </p>
+
+                    <a href="#membership" class="  text-white drop-shadow  bg-primary !text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-opacity-90 transition inline-block whitespace-nowrap">
+                        Rozpocznij Trening
+                    </a>
+
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white scroll-down">
+                <i class="ri-arrow-down-line ri-2x"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">O Nas</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20gym%20interior%20with%20state-of-the-art%20equipment%2C%20spacious%20training%20area%2C%20clean%20and%20professional%20environment%2C%20natural%20lighting%2C%20motivational%20atmosphere%2C%20no%20people%2C%20photorealistic&width=600&height=400&seq=2&orientation=landscape" alt="Wnętrze siłowni" class="w-full h-auto rounded-lg shadow-xl object-cover object-top">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Twoja droga do lepszego samopoczucia</h3>
+                    <p class="text-gray-700 mb-6">PowerFit to więcej niż tylko siłownia - to społeczność ludzi dążących do zdrowszego i aktywniejszego stylu życia. Od 2015 roku pomagamy naszym członkom osiągać ich cele fitness, niezależnie od tego, czy dopiero zaczynają swoją przygodę z treningiem, czy są doświadczonymi sportowcami.</p>
+                    <p class="text-gray-700 mb-6">Nasza przestrzeń o powierzchni 1500m² wyposażona jest w najnowocześniejszy sprzęt, strefy funkcjonalne i sale do zajęć grupowych. Nasz zespół certyfikowanych trenerów jest zawsze gotowy, aby pomóc Ci osiągnąć maksymalne rezultaty.</p>
+
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                                <i class="ri-award-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Certyfikowani trenerzy</h4>
+                                <p class="text-gray-600 text-sm">Eksperci z wieloletnim doświadczeniem</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                                <i class="ri-timer-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Otwarte 24/7</h4>
+                                <p class="text-gray-600 text-sm">Trenuj kiedy chcesz</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                                <i class="ri-group-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Różnorodne zajęcia</h4>
+                                <p class="text-gray-600 text-sm">Ponad 30 typów zajęć grupowych</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                                <i class="ri-wifi-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Darmowe Wi-Fi</h4>
+                                <p class="text-gray-600 text-sm">Bądź online podczas treningu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Nasza Oferta</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Odkryj różnorodność treningów, które oferujemy. Niezależnie od Twoich celów i poziomu zaawansowania, mamy coś dla Ciebie.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=strength%20training%20with%20weights%20in%20modern%20gym%2C%20person%20lifting%20weights%2C%20muscular%20focus%2C%20professional%20gym%20equipment%2C%20energetic%20atmosphere%2C%20fitness%20motivation%2C%20photorealistic&width=400&height=300&seq=3&orientation=landscape" alt="Trening siłowy" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-dumbbell-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Trening siłowy</h3>
+                        <p class="text-gray-700 mb-4">Buduj masę mięśniową i zwiększaj siłę dzięki naszemu profesjonalnemu sprzętowi i indywidualnym planom treningowym.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=cardio%20training%20in%20modern%20gym%2C%20person%20on%20treadmill%2C%20high-energy%20workout%2C%20professional%20gym%20equipment%2C%20bright%20environment%2C%20fitness%20motivation%2C%20photorealistic&width=400&height=300&seq=4&orientation=landscape" alt="Trening cardio" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-heart-pulse-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Trening cardio</h3>
+                        <p class="text-gray-700 mb-4">Popraw wydolność sercowo-naczyniową i spal kalorie dzięki różnorodnym urządzeniom cardio i zajęciom interwałowym.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=group%20fitness%20class%20in%20modern%20gym%2C%20people%20exercising%20together%2C%20high-energy%20workout%2C%20professional%20instructor%20leading%20class%2C%20bright%20environment%2C%20fitness%20motivation%2C%20photorealistic&width=400&height=300&seq=5&orientation=landscape" alt="Zajęcia grupowe" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-group-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Zajęcia grupowe</h3>
+                        <p class="text-gray-700 mb-4">Od jogi po HIIT - nasze zajęcia grupowe prowadzone przez doświadczonych instruktorów zapewnią Ci motywację i różnorodność.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=personal%20training%20session%20in%20modern%20gym%2C%20trainer%20working%20with%20client%2C%20focused%20attention%2C%20professional%20gym%20equipment%2C%20bright%20environment%2C%20fitness%20motivation%2C%20photorealistic&width=400&height=300&seq=6&orientation=landscape" alt="Trening personalny" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-user-star-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Trening personalny</h3>
+                        <p class="text-gray-700 mb-4">Indywidualne podejście, spersonalizowany plan treningowy i dietetyczny, oraz stała motywacja od Twojego osobistego trenera.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=functional%20training%20in%20modern%20gym%2C%20person%20using%20battle%20ropes%2C%20high-intensity%20workout%2C%20professional%20gym%20equipment%2C%20bright%20environment%2C%20fitness%20motivation%2C%20photorealistic&width=400&height=300&seq=7&orientation=landscape" alt="Trening funkcjonalny" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-boxing-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Trening funkcjonalny</h3>
+                        <p class="text-gray-700 mb-4">Popraw swoją siłę, równowagę i koordynację dzięki treningom funkcjonalnym wykorzystującym naturalne wzorce ruchowe.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=stretching%20and%20flexibility%20class%20in%20modern%20gym%2C%20person%20in%20yoga%20pose%2C%20relaxing%20atmosphere%2C%20professional%20gym%20equipment%2C%20bright%20environment%2C%20wellness%20focus%2C%20photorealistic&width=400&height=300&seq=8&orientation=landscape" alt="Stretching i mobilność" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                            <i class="ri-yoga-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Stretching i mobilność</h3>
+                        <p class="text-gray-700 mb-4">Zwiększ swoją elastyczność, popraw zakres ruchu i zapobiegaj kontuzjom dzięki naszym zajęciom rozciągającym.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Dowiedz się więcej
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Nasi Trenerzy</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Poznaj nasz zespół certyfikowanych trenerów, którzy pomogą Ci osiągnąć Twoje cele fitness.</p>
+            </div>
+
+            <div class="trainer-carousel flex space-x-6 pb-8">
+                <div class="trainer-card flex-shrink-0 w-full md:w-80 bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20male%20fitness%20trainer%2C%20athletic%20build%2C%20confident%20pose%2C%20modern%20gym%20background%2C%20professional%20attire%2C%20friendly%20smile%2C%20photorealistic%20portrait&width=400&height=500&seq=9&orientation=portrait" alt="Michał Kowalski" class="w-full h-80 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Michał Kowalski</h3>
+                        <p class="text-primary font-medium mb-3">Trener personalny, Specjalista trening siłowy</p>
+                        <p class="text-gray-700 mb-4">10 lat doświadczenia, certyfikaty IFBB i PZPKFITS. Specjalizuje się w budowaniu masy mięśniowej i przygotowaniach do zawodów.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-card flex-shrink-0 w-full md:w-80 bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20female%20fitness%20trainer%2C%20athletic%20build%2C%20confident%20pose%2C%20modern%20gym%20background%2C%20professional%20attire%2C%20friendly%20smile%2C%20photorealistic%20portrait&width=400&height=500&seq=10&orientation=portrait" alt="Anna Nowak" class="w-full h-80 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Anna Nowak</h3>
+                        <p class="text-primary font-medium mb-3">Instruktor fitness, Specjalista zajęć grupowych</p>
+                        <p class="text-gray-700 mb-4">8 lat doświadczenia, certyfikaty Les Mills i Zumba. Specjalizuje się w zajęciach cardio, HIIT i body pump.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-card flex-shrink-0 w-full md:w-80 bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20male%20fitness%20trainer%2C%20athletic%20build%2C%20confident%20pose%2C%20modern%20gym%20background%2C%20professional%20attire%2C%20friendly%20smile%2C%20photorealistic%20portrait&width=400&height=500&seq=11&orientation=portrait" alt="Piotr Wiśniewski" class="w-full h-80 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Piotr Wiśniewski</h3>
+                        <p class="text-primary font-medium mb-3">Trener funkcjonalny, Fizjoterapeuta</p>
+                        <p class="text-gray-700 mb-4">12 lat doświadczenia, certyfikaty FMS i TRX. Specjalizuje się w treningu funkcjonalnym i rehabilitacji sportowej.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-card flex-shrink-0 w-full md:w-80 bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20female%20fitness%20trainer%2C%20athletic%20build%2C%20confident%20pose%2C%20modern%20gym%20background%2C%20professional%20attire%2C%20friendly%20smile%2C%20photorealistic%20portrait&width=400&height=500&seq=12&orientation=portrait" alt="Karolina Lewandowska" class="w-full h-80 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Karolina Lewandowska</h3>
+                        <p class="text-primary font-medium mb-3">Instruktor jogi, Trener wellness</p>
+                        <p class="text-gray-700 mb-4">7 lat doświadczenia, certyfikaty Yoga Alliance. Specjalizuje się w jodze, pilatesie i technikach relaksacyjnych.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-8">
+                <button class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full text-gray-600 hover:bg-primary hover:text-white transition mr-4" id="prev-trainer">
+                    <i class="ri-arrow-left-s-line ri-lg"></i>
+                </button>
+                <button class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full text-gray-600 hover:bg-primary hover:text-white transition" id="next-trainer">
+                    <i class="ri-arrow-right-s-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Grafik Zajęć</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Sprawdź nasz aktualny grafik zajęć i zaplanuj swój trening.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
+                <div class="flex justify-between items-center mb-8">
+                    <button class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <h3 class="text-xl font-bold">20 - 26 kwietnia 2025</h3>
+                    <button class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+
+                <div class="flex mb-6 space-x-2">
+                    <button class="px-4 py-2 bg-primary text-white !rounded-full text-sm font-medium whitespace-nowrap">Wszystkie</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Cardio</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Siłowe</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Funkcjonalne</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Joga</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Pilates</button>
+                </div>
+
+                <div class="min-w-[1000px]">
+                    <div class="grid grid-cols-8 gap-4 mb-4">
+                        <div class="text-center font-medium text-gray-500">Godzina</div>
+                        <div class="text-center font-medium">Poniedziałek</div>
+                        <div class="text-center font-medium">Wtorek</div>
+                        <div class="text-center font-medium">Środa</div>
+                        <div class="text-center font-medium">Czwartek</div>
+                        <div class="text-center font-medium">Piątek</div>
+                        <div class="text-center font-medium">Sobota</div>
+                        <div class="text-center font-medium">Niedziela</div>
+                    </div>
+
+                    <div class="grid grid-cols-8 gap-4 mb-4 items-center">
+                        <div class="text-center font-medium text-gray-500">7:00</div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">Poranny Cardio</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 8/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Joga</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 5/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">HIIT</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 10/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Pilates</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 7/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">Spinning</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 6/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Body Pump</p>
+                            <p class="text-sm text-gray-600">Piotr W.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 12/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div class="grid grid-cols-8 gap-4 mb-4 items-center">
+                        <div class="text-center font-medium text-gray-500">9:00</div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Body Pump</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 9/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-red-100 rounded p-2 text-center">
+                            <p class="font-medium">TRX</p>
+                            <p class="text-sm text-gray-600">Piotr W.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 4/10</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Crossfit</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 8/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-red-100 rounded p-2 text-center">
+                            <p class="font-medium">Functional</p>
+                            <p class="text-sm text-gray-600">Piotr W.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 6/10</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Body Pump</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 10/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Joga</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 9/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Pilates</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 8/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-8 gap-4 mb-4 items-center">
+                        <div class="text-center font-medium text-gray-500">17:00</div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">HIIT</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 7/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Body Pump</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 5/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">Spinning</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 8/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-blue-100 rounded p-2 text-center">
+                            <p class="font-medium">Crossfit</p>
+                            <p class="text-sm text-gray-600">Michał K.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 6/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-red-100 rounded p-2 text-center">
+                            <p class="font-medium">TRX</p>
+                            <p class="text-sm text-gray-600">Piotr W.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 3/10</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">HIIT</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 11/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div class="grid grid-cols-8 gap-4 mb-4 items-center">
+                        <div class="text-center font-medium text-gray-500">19:00</div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Joga</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 4/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">Zumba</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 9/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Pilates</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 5/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-yellow-100 rounded p-2 text-center">
+                            <p class="font-medium">Zumba</p>
+                            <p class="text-sm text-gray-600">Anna N.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 7/15</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div class="bg-green-100 rounded p-2 text-center">
+                            <p class="font-medium">Joga</p>
+                            <p class="text-sm text-gray-600">Karolina L.</p>
+                            <p class="text-xs text-gray-500">Miejsca: 6/12</p>
+                            <button class="mt-2 px-3 py-1 bg-primary text-white text-xs !rounded-button whitespace-nowrap">Zapisz się</button>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Pobierz pełny grafik</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Cennik</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Wybierz karnet, który najlepiej odpowiada Twoim potrzebom.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 justify-center">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 md:w-80">
+                    <div class="p-8 border-b">
+                        <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                        <div class="flex items-end mb-4">
+                            <span class="text-4xl font-bold">149 zł</span>
+                            <span class="text-gray-600 ml-2">/miesiąc</span>
+                        </div>
+                        <p class="text-gray-600">Idealny dla początkujących</p>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Dostęp do siłowni 7 dni w tygodniu</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Godziny otwarcia: 6:00 - 22:00</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Podstawowy plan treningowy</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <div class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Zajęcia grupowe</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <div class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Trening personalny</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <div class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Sauna i strefa wellness</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-gray-800 mt-8 py-3 !rounded-button font-semibold hover:bg-gray-200 transition whitespace-nowrap">Wybierz</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2 md:w-80 border-2 border-primary transform scale-105 z-10">
+                    <div class="bg-primary text-white text-center py-2 text-sm font-semibold">
+                        NAJCZĘŚCIEJ WYBIERANY
+                    </div>
+                    <div class="p-8 border-b">
+                        <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                        <div class="flex items-end mb-4">
+                            <span class="text-4xl font-bold">249 zł</span>
+                            <span class="text-gray-600 ml-2">/miesiąc</span>
+                        </div>
+                        <p class="text-gray-600">Pełny dostęp do klubu</p>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Dostęp do siłowni 24/7</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Nielimitowane zajęcia grupowe</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Spersonalizowany plan treningowy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Konsultacja z trenerem (1x/mies.)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Sauna i strefa wellness</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <div class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-close-line"></i>
+                                </div>
+                                <span>Indywidualne sesje treningowe</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-primary text-white mt-8 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Wybierz</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 md:w-80">
+                    <div class="p-8 border-b">
+                        <h3 class="text-2xl font-bold mb-2">VIP</h3>
+                        <div class="flex items-end mb-4">
+                            <span class="text-4xl font-bold">399 zł</span>
+                            <span class="text-gray-600 ml-2">/miesiąc</span>
+                        </div>
+                        <p class="text-gray-600">Maksimum możliwości</p>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Wszystko z pakietu Premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>4 sesje z trenerem personalnym</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Indywidualny plan dietetyczny</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Priorytetowa rezerwacja zajęć</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Analiza składu ciała (2x/mies.)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                                    <i class="ri-check-line text-green-600"></i>
+                                </div>
+                                <span>Dostęp do ekskluzywnych wydarzeń</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-gray-800 mt-8 py-3 !rounded-button font-semibold hover:bg-gray-200 transition whitespace-nowrap">Wybierz</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-gray-50 rounded-lg p-8 shadow-inner">
+                <h3 class="text-2xl font-bold mb-6 text-center">Dodatkowe usługi</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                            <i class="ri-user-star-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Trening personalny</h4>
+                            <p class="text-gray-600 mb-2">Indywidualne sesje z trenerem</p>
+                            <p class="font-semibold">od 120 zł / sesja</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                            <i class="ri-restaurant-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Konsultacja dietetyczna</h4>
+                            <p class="text-gray-600 mb-2">Spersonalizowany plan żywieniowy</p>
+                            <p class="font-semibold">od 150 zł / konsultacja</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+                            <i class="ri-group-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Trening grupowy</h4>
+                            <p class="text-gray-600 mb-2">Pojedyncze wejście na zajęcia</p>
+                            <p class="font-semibold">od 35 zł / zajęcia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Galeria</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Zobacz naszą przestrzeń i atmosferę panującą w klubie.</p>
+            </div>
+
+            <div class="flex mb-8 space-x-2 justify-center">
+                <button class="px-4 py-2 bg-primary text-white !rounded-full text-sm font-medium whitespace-nowrap">Wszystkie</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Sprzęt</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Zajęcia</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 !rounded-full text-sm font-medium hover:bg-gray-200 transition whitespace-nowrap">Przestrzeń</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20gym%20interior%20with%20weight%20training%20equipment%2C%20spacious%20and%20clean%2C%20professional%20lighting%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=300&seq=13&orientation=landscape" alt="Strefa siłowa" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=cardio%20equipment%20in%20modern%20gym%2C%20treadmills%20and%20ellipticals%2C%20spacious%20and%20clean%2C%20professional%20lighting%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=300&seq=14&orientation=landscape" alt="Strefa cardio" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=group%20fitness%20class%20in%20modern%20gym%2C%20people%20exercising%20together%2C%20spacious%20studio%20with%20mirrors%2C%20professional%20lighting%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=600&seq=15&orientation=portrait" alt="Zajęcia grupowe" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=personal%20training%20session%20in%20modern%20gym%2C%20trainer%20working%20with%20client%2C%20focused%20attention%2C%20professional%20gym%20equipment%2C%20bright%20environment%2C%20photorealistic&width=400&height=300&seq=16&orientation=landscape" alt="Trening personalny" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20gym%20reception%20area%2C%20welcoming%20entrance%2C%20professional%20design%2C%20bright%20and%20clean%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=600&height=300&seq=17&orientation=landscape" alt="Recepcja" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=functional%20training%20area%20in%20modern%20gym%2C%20TRX%20equipment%2C%20battle%20ropes%2C%20open%20space%2C%20professional%20lighting%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=300&seq=18&orientation=landscape" alt="Strefa funkcjonalna" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=yoga%20class%20in%20modern%20gym%2C%20people%20in%20yoga%20poses%2C%20peaceful%20atmosphere%2C%20spacious%20studio%20with%20natural%20light%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=300&seq=19&orientation=landscape" alt="Joga" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=wellness%20area%20in%20modern%20gym%2C%20sauna%20and%20relaxation%20space%2C%20luxurious%20design%2C%20professional%20lighting%2C%20high-end%20fitness%20facility%2C%20photorealistic&width=400&height=300&seq=20&orientation=landscape" alt="Strefa wellness" class="w-full h-full object-cover object-top hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <button class="bg-primary text-white px-8 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Pokaż więcej</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Kontakt</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Masz pytania? Skontaktuj się z nami lub odwiedź nasz klub.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="rounded-lg overflow-hidden shadow-lg h-96">
+                        <div style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;" class="w-full h-full"></div>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                                <i class="ri-map-pin-line text-primary ri-lg"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Adres</h4>
+                            <p class="text-gray-600 text-center">ul. Sportowa 123<br>00-001 Warszawa</p>
+                        </div>
+
+                        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                                <i class="ri-time-line text-primary ri-lg"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Godziny otwarcia</h4>
+                            <p class="text-gray-600 text-center">Pon-Pt: 6:00 - 23:00<br>Sob-Nd: 8:00 - 22:00</p>
+                        </div>
+
+                        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                                <i class="ri-phone-line text-primary ri-lg"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Kontakt</h4>
+                            <p class="text-gray-600 text-center">+48 123 456 789<br>kontakt@powerfit.pl</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-50 rounded-lg p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Wyślij wiadomość</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Imię i nazwisko</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded border-none shadow-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Jan Kowalski">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded border-none shadow-sm focus:ring-2 focus:ring-primary outline-none" placeholder="jan@example.com">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Temat</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded border-none shadow-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Temat wiadomości">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Wiadomość</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded border-none shadow-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Twoja wiadomość..."></textarea>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="custom-checkbox mr-3">
+                                <span class="text-gray-700">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Wyślij wiadomość</button>
+                    </form>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">Dołącz do nas w mediach społecznościowych</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-facebook-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-instagram-line ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-youtube-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+                                <i class="ri-twitter-x-line ri-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Zapisz się do newslettera</h2>
+                <p class="text-gray-300 mb-8">Bądź na bieżąco z nowościami, promocjami i wydarzeniami w naszym klubie.</p>
+
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Twój adres email" class="flex-grow px-4 py-3 rounded-l border-none shadow-sm focus:ring-2 focus:ring-primary outline-none text-gray-800">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition whitespace-nowrap">Zapisz się</button>
+                </form>
+
+                <p class="text-gray-400 text-sm mt-4">Możesz zrezygnować z subskrypcji w dowolnym momencie. Zapoznaj się z naszą <a href="#" class="text-primary hover:underline">polityką prywatności</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="#" class="text-2xl font-['Pacifico'] mb-6 inline-block">PowerFit</a>
+                    <p class="text-gray-400 mb-6">Nowoczesny klub fitness z pełnym zakresem usług, profesjonalnym sprzętem i doświadczonymi trenerami.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-primary hover:text-white transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-primary hover:text-white transition">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-primary hover:text-white transition">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-primary hover:text-white transition">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Szybkie linki</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">O nas</a></li>
+                        <li><a href="#offer" class="text-gray-400 hover:text-white transition">Oferta</a></li>
+                        <li><a href="#trainers" class="text-gray-400 hover:text-white transition">Trenerzy</a></li>
+                        <li><a href="#schedule" class="text-gray-400 hover:text-white transition">Grafik</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Cennik</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Usługi</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Trening personalny</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Zajęcia grupowe</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Konsultacje dietetyczne</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Analiza składu ciała</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Strefa wellness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sklep z suplementami</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Kontakt</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-400">ul. Sportowa 123, 00-001 Warszawa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="text-gray-400">+48 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-400">kontakt@powerfit.pl</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span class="text-gray-400">Pon-Pt: 6:00 - 23:00<br>Sob-Nd: 8:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 PowerFit. Wszelkie prawa zastrzeżone.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Polityka prywatności</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Regulamin</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Mapa strony</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white shadow-lg p-4 z-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0 md:mr-8">
+                <p class="text-gray-700">Używamy plików cookie, aby zapewnić najlepsze doświadczenia. Kontynuując korzystanie z naszej strony, zgadzasz się na naszą <a href="#" class="text-primary hover:underline">politykę prywatności</a>.</p>
+            </div>
+            <div class="flex space-x-4">
+                <button id="accept-cookies" class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Akceptuję</button>
+                <button id="reject-cookies" class="bg-gray-200 text-gray-800 px-6 py-2 !rounded-button font-medium hover:bg-gray-300 transition whitespace-nowrap">Odrzucam</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Bot -->
+    <div id="chat-bot" class="fixed bottom-6 right-6 z-40">
+        <button id="chat-toggle" class="w-16 h-16 bg-primary text-white rounded-full shadow-lg flex items-center justify-center">
+            <i class="ri-message-3-line ri-2x"></i>
+        </button>
+
+        <div id="chat-window" class="absolute bottom-20 right-0 w-80 bg-white rounded-lg shadow-xl overflow-hidden opacity-0 invisible transition-all duration-300 transform translate-y-4">
+            <div class="bg-primary text-white p-4 flex items-center justify-between">
+                <h3 class="font-bold">Czat z konsultantem</h3>
+                <button id="chat-close" class="text-white">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+            </div>
+            <div class="h-80 p-4 overflow-y-auto bg-gray-50" id="chat-messages">
+                <div class="flex mb-4">
+                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 flex-shrink-0">
+                        <i class="ri-customer-service-2-line"></i>
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow-sm max-w-[80%]">
+                        <p>Cześć! Jak mogę Ci pomóc? Chętnie odpowiem na pytania dotyczące naszej oferty, karnetów czy zajęć.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex">
+                    <input type="text" placeholder="Napisz wiadomość..." class="flex-grow px-4 py-2 rounded-l border-none shadow-sm focus:ring-2 focus:ring-primary outline-none">
+                    <button class="bg-primary text-white px-4 py-2 !rounded-r-button">
+                        <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-gray-900');
+                    navbar.classList.remove('bg-transparent');
+                } else {
+                    navbar.classList.remove('bg-gray-900');
+                    navbar.classList.add('bg-transparent');
+                }
+            });
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Cookie banner
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookies = document.getElementById('accept-cookies');
+            const rejectCookies = document.getElementById('reject-cookies');
+
+            if (!localStorage.getItem('cookiesAccepted')) {
+                cookieBanner.style.display = 'block';
+            } else {
+                cookieBanner.style.display = 'none';
+            }
+
+            acceptCookies.addEventListener('click', function() {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.style.display = 'none';
+            });
+
+            rejectCookies.addEventListener('click', function() {
+                localStorage.setItem('cookiesAccepted', 'false');
+                cookieBanner.style.display = 'none';
+            });
+
+            // Chat bot
+            const chatToggle = document.getElementById('chat-toggle');
+            const chatWindow = document.getElementById('chat-window');
+            const chatClose = document.getElementById('chat-close');
+
+            chatToggle.addEventListener('click', function() {
+                chatWindow.classList.toggle('opacity-0');
+                chatWindow.classList.toggle('invisible');
+                chatWindow.classList.toggle('translate-y-4');
+                chatToggle.style.display = 'none';
+            });
+
+            chatClose.addEventListener('click', function() {
+                chatWindow.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                chatToggle.style.display = 'flex';
+            });
+
+            // Trainer carousel
+            const trainerCarousel = document.querySelector('.trainer-carousel');
+            const prevTrainer = document.getElementById('prev-trainer');
+            const nextTrainer = document.getElementById('next-trainer');
+
+            prevTrainer.addEventListener('click', function() {
+                trainerCarousel.scrollBy({
+                    left: -320,
+                    behavior: 'smooth'
+                });
+            });
+
+            nextTrainer.addEventListener('click', function() {
+                trainerCarousel.scrollBy({
+                    left: 320,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hero slider
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.hero-slide');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                slides[index].classList.add('active');
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            // Uncomment this if you want automatic slider
+            // setInterval(nextSlide, 5000);
+        });
+
+    </script>
+</body>
+
+</html>
